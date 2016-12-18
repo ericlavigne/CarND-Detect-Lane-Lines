@@ -21,6 +21,36 @@ If you already have Anaconda for Python 2 installed, you can create a separate e
 
 `>  source activate yourNewEnvironment`
 
+**Step 1 Alternative - VirtualEnv**
+
+First time:
+
+```
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+deactivate
+```
+
+When starting to work:
+
+```
+source env/bin/activate
+jupyter notebook P1.ipynb
+```
+
+After installing new libraries:
+
+```
+pip freeze > requirements.txt
+```
+
+When finished:
+
+```
+deactivate
+```
+
 **Step 2:** Installing OpenCV
 
 Once you have Anaconda installed, first double check you are in your Python 3 environment:
